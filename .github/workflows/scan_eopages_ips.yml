@@ -2,11 +2,7 @@ name: Update EO Pages IPS
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths: [ 'scan_eopages_ips.py' ]
-  schedule:
-    - cron: '45 9 */7 * *'
+
 
 concurrency:
   group: scanner
