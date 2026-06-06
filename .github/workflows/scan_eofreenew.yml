@@ -2,11 +2,7 @@ name: Update EO Free new IPS
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths: [ 'scan_freenew.py' ]
-  schedule:
-    - cron: '45 6 */7 * *'
+
 
 concurrency:
   group: scanner
