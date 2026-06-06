@@ -31,8 +31,7 @@ jobs:
     - name: Set up
       run: |
         python -m pip install --upgrade pip
-        pip install httpx
-        
+        pip install httpx requests
     - name: Search for IPS
       run: |
         python scan_freenew.py
