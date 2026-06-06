@@ -20,7 +20,8 @@ jobs:
     steps:
     - name: Check
       uses: actions/checkout@v4
-      
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Set Python
       uses: actions/setup-python@v5
       with:
@@ -46,7 +47,7 @@ jobs:
         name: available-ips
         path: available_eofreenew_ips.txt
         retention-days: 30
-        
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Update file
       run: |
         git config --local user.email "action@github.com"
